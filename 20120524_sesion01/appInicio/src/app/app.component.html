@@ -1,0 +1,9 @@
+<!-- Unidireccional TS a HTML -->
+<app-register></app-register>
+<hr>
+<!-- Bidireccional HTML a TS -->
+<button (click)="addNewFruitName()" [disabled]="!isEnabled">New Fruit</button>
+<input type="text" (input)="captureFruitName($event)">
+<hr>
+<!-- Unidireccional TS a HTML -->
+<app-todo *ngFor="let fruitName of fruitsNames; let indexFruitName = index" [fruitName]="fruitName" [indexFruitName]="indexFruitName" (onDeleteFruitName)="removeFruitName($event)"></app-todo>
