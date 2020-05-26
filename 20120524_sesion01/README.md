@@ -39,6 +39,9 @@ Angular llega con 2 ambientes por defecto: Desarrollo y producción
 - Si quisiera cambiar el prefijo de los componentes debo cambiarlo en Angular.js y tslint.json (prefix).
 - *COMUNICACIÓN UNIDIRECCIONAL* | 20% | TypeScript ➡️ HTML
 - *COMUNICACIÓN BIDIRECCIONAL* | HTML ➡️ TypeScript
+- *@* son Decoradores. Ejm: @input y @output. Nos ayuda a intercambiar datos entre componentes. Son un mecanismo para enviar / recibir datos de un componente a otro.
+- *@Input Comunicación de padres a hijos*
+- *@Output Comunicación de hijos a padres* Además, necesitaríamos una instancia EventEmitter.
 - Una *DIRECTIVA ESTRUCTURAL* lo podemos diferenciar, ya que le antepone un *. Ejm: *ngFor
 - Podriamos decir que un evento, es algo que sale del componente
 - *[]* tiene un significado: A sido evaluado previamente con JavaScript - siempre aplica a entradas.
