@@ -49,16 +49,28 @@ Angular llega con 2 ambientes por defecto: Desarrollo y producción
 
 ### Comandos
 
-1. Creacion de componente (Crea los archivos: .css, .html, .spec.ts, .ts)
+1.Creacion de componente (Crea los archivos: .css, .html, .spec.ts, .ts)
 
 ```sh
 $ng generator component nombreComponente
 ```
 
-- Resumen
+-Resumen
 
 ```sh
 $ng g c nombreComponente
+```
+
+2.Correr el proyecto
+
+```sh
+$ng serve --open
+```
+
+-Resumen
+
+```sh
+$ng serve -o
 ```
 
 ## Extra
