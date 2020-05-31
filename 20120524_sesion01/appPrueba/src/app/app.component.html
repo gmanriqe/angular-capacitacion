@@ -1,0 +1,8 @@
+<!-- disabled = Deshabilitado -->
+<button type="button" (click)="addNewFruitName()" [disabled]="!isEnabled">Nueva Fruta</button>
+<input type="text" (input)="captureFruitName($event)">
+<!-- index es una variable que viene pre definida en Angular. En un ngFor guarda la posicion del elemento -->
+<app-todo *ngFor="let fruitName of fruitList; let indexFruitName = index"
+          [entradaFruitName]="fruitName"
+          [entradaIndexFruitName]="indexFruitName"
+          (onDeleteFruitName)="removeFruitName($event)"></app-todo> <!-- [entradaFruitName] es una entrada -->

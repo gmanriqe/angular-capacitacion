@@ -45,9 +45,18 @@ Angular llega con 2 ambientes por defecto: Desarrollo y producción
 - Una *DIRECTIVA ESTRUCTURAL* lo podemos diferenciar, ya que le antepone un *. Ejm: *ngFor
 - Podriamos decir que un evento, es algo que sale del componente
 - *[]* tiene un significado: A sido evaluado previamente con JavaScript - siempre aplica a entradas.
+- Toda salida o evento va entre parentesis. Ejm: Un EVENTO PREDEFINIDO de boton o de input (click)="nombreFuncion()" o (input)="nombreFuncion()"
+- {{  }} ➡️ Aquí se colocan variables creadas desde TS - Interpolación.
+- [] ➡️ 
 - Tarea: Creación de un componente: Registro: Nombres, Apellidos, Correo, Contrasenia
 
 ### Comandos
+
+0.creación de proyecto
+
+```sh
+$ng new nuevoProyecto
+```
 
 1.Creacion de componente (Crea los archivos: .css, .html, .spec.ts, .ts)
 
@@ -73,9 +82,15 @@ $ng serve --open
 $ng serve -o
 ```
 
+## JavaScript - Métodos mas utilizados
+
+- .trim() ➡️ Quitar espacios en blanco
+- .splice(index, 1) ➡️ Para eliminar solo 1 elemento de un arreglo
+
 ## Extra
 
 - ./ ➡️ Hace referencia apartir de la ruta desde el mismo archivo.
 - Podemos hacer el deploy de Angular hasta en un servidor misio, ya que el transpilado es HTML, CSS y JS.
 - Node con Gulp y en Angular con Webpack.
 - Todo lo que desarrollamos debe cumplir con el CLEANCODE
+- $ng v ➡️ Verificar versión de Angular
