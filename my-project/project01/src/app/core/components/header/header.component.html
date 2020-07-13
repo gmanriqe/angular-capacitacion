@@ -1,6 +1,7 @@
 <div fxLayout fxLayoutAlign="space-between">
   <div fxLayout fxLayoutAlign="start center">
-    <button mat-icon-button fxHide.gt-sm>
+    <!-- fxHide.gt-sm aparece apartir desde 960px -->
+    <button mat-icon-button fxHide.gt-sm (click)="openMenuSidebar()">
       <mat-icon>menu</mat-icon>
     </button>
     <h1>System</h1>
@@ -14,8 +15,7 @@
     </nav>
 
     <button mat-button [matMenuTriggerFor]="menu">
-      <mat-icon>mood</mat-icon>
-      <mat-icon>keyboard_arrow_down</mat-icon>
+      <mat-icon>mood</mat-icon>Nombre de usuario<mat-icon>keyboard_arrow_down</mat-icon>
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item>

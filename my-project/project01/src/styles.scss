@@ -12,11 +12,11 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$project01-primary: mat-palette($mat-indigo);
-$project01-accent: mat-palette($mat-pink, A200, A100, A400);
+$project01-primary: mat-palette($mat-indigo); // La mas usada
+$project01-accent: mat-palette($mat-pink, A200, A100, A400); // Para mensajes de confirmación
 
 // The warn palette is optional (defaults to red).
-$project01-warn: mat-palette($mat-red);
+$project01-warn: mat-palette($mat-red); // Algún tipo de notificación
 
 // Create the theme object (a Sass map containing all of the palettes).
 $project01-theme: mat-light-theme($project01-primary, $project01-accent, $project01-warn);
@@ -28,6 +28,11 @@ $project01-theme: mat-light-theme($project01-primary, $project01-accent, $projec
 
 .main-header {
   width: 100%;
+}
+
+.fullsreen {
+  width: 100vw;
+  height: 100vh;
 }
 
 html, body { height: 100%; }

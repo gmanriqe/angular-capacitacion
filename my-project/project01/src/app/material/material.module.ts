@@ -6,19 +6,13 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
-
-
+import {MatCardModule} from '@angular/material/card'; // card
+import {MatFormFieldModule} from '@angular/material/form-field'; // formularios
+import {MatInputModule} from '@angular/material/input'; // formularios
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    FlexLayoutModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatMenuModule,
-    MatListModule,
-    MatToolbarModule
   ],
   exports: [
     FlexLayoutModule,
@@ -26,7 +20,10 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatMenuModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class MaterialModule { }
