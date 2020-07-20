@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Avantica System';
-  statusUser: false;
+  // statusUser: false; Pendiente: Esto debo pasarlo al componente header
 }
