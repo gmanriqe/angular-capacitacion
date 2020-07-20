@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ClientService } from '../../../services/client.service';
+import { MatDialog } from '@angular/material/dialog';
+import { FormClientComponent } from '../form-client/form-client.component';
 
 @Component({
   selector: 'app-list-client',
@@ -10,15 +12,16 @@ export class ListClientComponent implements OnInit {
   listClients: [];
   columnsToDisplay = [
     'nombre',
-    'apellidoMaterno',
     'apellidoPaterno',
+    'apellidoMaterno',
     'edad',
     'fechaNacimiento',
     'actions'
   ];
 
   constructor(
-    private readonly clientService: ClientService
+    private readonly clientService: ClientService,
+    private readonly dialog: MatDialog
   ) {
   }
 
@@ -30,6 +33,13 @@ export class ListClientComponent implements OnInit {
     this.clientService.list().subscribe((dataClient: any) => {
     this.listClients = dataClient;
     console.log(dataClient);
-  });
+    });
+  }
+
+  openForm(): void {
+    this.dialog.open(FormClientComponent, {
+      panelClass: 'container-form',
+      disableClose: true,
+    });
   }
 }
